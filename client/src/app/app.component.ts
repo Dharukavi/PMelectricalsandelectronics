@@ -29,7 +29,8 @@ export class AppComponent {
   readonly services = [
     { number: '01', title: 'Air conditioning', copy: 'Cooling issues, servicing and repairs to help your home feel comfortable again.', icon: '❄', image: 'https://images.unsplash.com/photo-1762341123870-d706f257a12e?auto=format&fit=crop&w=900&q=85', alt: 'Wall mounted air conditioner in a modern home' },
     { number: '02', title: 'Refrigerators', copy: 'Practical help with cooling, unusual sounds, leaks and everyday fridge concerns.', icon: '◈', image: 'https://images.unsplash.com/photo-1722942431679-72fc53fe9707?auto=format&fit=crop&w=900&q=85', alt: 'White refrigerator in a bright kitchen' },
-    { number: '03', title: 'Washing machines', copy: 'Diagnosis and repair for wash, spin, drain and other machine problems.', icon: '◉', image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=900&q=85', alt: 'Front-load washing machine in a laundry room' }
+    { number: '03', title: 'Washing machines', copy: 'Diagnosis and repair for wash, spin, drain and other machine problems.', icon: '◉', image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=900&q=85', alt: 'Front-load washing machine in a laundry room' },
+    { number: '04', title: 'Microwave ovens', copy: 'Help with heating, turntable, buttons and other everyday microwave issues.', icon: '◌', image: 'https://images.unsplash.com/photo-1585659722983-3a675dabf23d?auto=format&fit=crop&w=900&q=85', alt: 'Microwave oven in a modern kitchen' }
   ];
   readonly reviews = [
     { name: 'Priyadharshini S.', rating: 4, text: 'They listened the feedback and done the best service with patience in next attempt. Overall good experience.', note: 'AC service · patient follow-up' },
