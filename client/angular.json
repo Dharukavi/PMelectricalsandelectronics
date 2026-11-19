@@ -1,0 +1,74 @@
+{
+  "projects": {
+    "pm-electricals": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "outputPath": "dist/pm-electricals",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "styles": [
+              "src/styles.css"
+            ],
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/assets"
+              }
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": {
+                "styles": true,
+                "fonts": {
+                  "inline": false
+                },
+                "scripts": true
+              },
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "650kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "pm-electricals:build:production"
+            },
+            "development": {
+              "buildTarget": "pm-electricals:build:development"
+            }
+          },
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 4000
+          }
+        }
+      }
+    }
+  },
+  "version": 1
+}
