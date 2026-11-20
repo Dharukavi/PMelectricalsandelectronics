@@ -24,7 +24,15 @@
                 "glob": "**/*",
                 "input": "src/assets"
               }
-            ]
+            ],
+            "server": "src/main.server.ts",
+            "outputMode": "static",
+            "security": {
+              "allowedHosts": []
+            },
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
